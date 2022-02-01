@@ -1,0 +1,114 @@
+.flex{ position: absolute;
+    top: 65%; 
+    color: crimson;
+     left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 300px;
+    padding: 80px 40px;
+    background: rgba(0,0,0,6);
+}
+
+.flex p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    
+}
+.flex input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.flex input[type=email],
+.flex input[type=password]{
+    border: none;
+    background:transparent;
+    border-bottom: 1px solid #fff;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+
+}
+.flex input[type=submit]{
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    background: red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;
+
+
+}
+
+.name{ 
+    font-family:cursive; 
+}
+.jojo{ 
+    text-align: center;
+    background-size: 6cm;
+background:linear-gradient(90deg,#03a9f4,#f441a5,#ffab3b,#03a9f4);
+
+    
+}
+.btn{ height: 60px; position: relative;
+ width: 200px;
+ margin: 0 35px;
+  border-radius: 50px;
+border: 2px black;
+outline: 2px;
+background-color: #111;
+color:cyan;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 2px;
+cursor: pointer;
+
+
+}
+.btn:first-child{ background-size: 400%;
+background: linear-gradient(90deg,#03a9f4,#f441a5,#ffab3b,#03a9f4);
+
+}
+.btn:last-child{
+background-size: 400%;
+background: linear-gradient(90deg,#03a9f4,#f441a5,#ffab3b,#03a9f4);
+
+}
+.btn:first-child:before,
+.btn:last-child:before{
+content: '';
+position: absolute;
+background:inherit ;
+top: -5px;
+right: -5px;
+bottom: -5px;
+left: -5px;
+border-radius: 50px;
+filter: blur(20px);
+opacity: 0;
+}
+.btn:first-child:before,
+.btn:last-child:before{
+opacity: 1;
+z-index: -1;
+
+}
+.btn{
+z-index: 1;
+animation: glow 8s linear infinite;
+}
+@keyframes glow {
+0%{
+    background-position: 0%;
+}
+100%{
+    background-position: 400%;
+}
+}
